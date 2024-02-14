@@ -8,10 +8,10 @@ while True:
     alea = randint(mini, maxi)
     user = 0
     while user != alea:
-        tour += 1
         user = int(input("Entrer un nombre entre {0} et {1} : ".format(mini,maxi)))
         if user not in [_ for _ in range(mini, maxi+1)]:
             continue
+        tour += 1
         if user < alea:
             print("C'est plus...")
         elif user > alea:
